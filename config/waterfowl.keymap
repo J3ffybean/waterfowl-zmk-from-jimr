@@ -41,21 +41,21 @@
 /* Colemak
  *
  * ,----------------------------------.                      ,----------------------------------.
- * |   Q  |   W  |   F  |   P  |   G  |                      |   J  |   L  |   U  |   Y  |   ;  |
+ * |   Q  |   W  |   F  |   P  |   B  |                      |   J  |   L  |   U  |   Y  |   '  |
  * |------+------+------+------+------|                      |------+------+------+------+------|
- * |   A  |   R  |   S  |   T  |   D  |                      |   H  |   N  |   E  |   I  |   O  |
+ * |   A  |   R  |   S  |   T  |   G  |                      |   M  |   N  |   E  |   I  |   O  |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
- * |   Z  |   X  |   C  |   V  |   B  |  | MUTE|    | PP  |  |   K  |   M  |   ,  |   .  |   /  |
+ * |   Z  |   X  |   C  |   D  |   V  |  | MUTE|    | PP  |  |   K  |   H  |   ,  |   .  |   /  |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
  *          ,-----.   ,--------------------.            ,--------------------.   ,-----.
  *          |     |   | DEL | SPACE | TAB  |            |  ESC  | BS | ENTER |   |     |
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
             bindings = <
-    &kp Q        &kp W       &kp F        &kp P        &kp G           &kp J    &kp L       &kp U        &kp Y        &kp SEMI
-    &gqt LSHFT A &gqt LCTRL R &gqt LALT S &gqt LCMD T  &kp D           &kp H    &gqt RCMD N &gqt RALT E  &gqt RCTRL I &gqt RSHIFT O
-    &kp Z        &kp X       &kp C        &kp V        &kp B           &kp K    &kp M       &kp COMMA    &kp DOT      &kp FSLH
-    &trans       &lt 3 DEL   &lt 1 SPACE  &kp TAB      &kp K_MUTE      &kp C_PP &kp ESC     &kp BSPC     &lt 2 RET    &trans
+    &kp Q        &kp W       &kp F         &kp P        &kp B           &kp J    &kp L        &kp U        &kp Y         &kp APOS
+    &gqt LGUI A  &gqt LALT R &gqt LCTRL S  &gqt LSHFT T &kp G           &kp M    &gqt RSHFT N &gqt RCTRL E  &gqt RALT I  &gqt RGUI O
+    &kp Z        &kp X       &kp C         &kp D        &kp V           &kp K    &kp H        &kp COMMA    &kp DOT       &kp FSLH
+    &trans       &lt 3 DEL   &lt 1 SPACE   &kp TAB      &kp K_MUTE      &kp C_PP &kp ESC      &kp BSPC     &lt 2 RET     &trans
             >;
 
             sensor-bindings = <
@@ -99,7 +99,7 @@
 /* SYM
  *
  * ,----------------------------------.                      ,----------------------------------.
- * |   !  |   @  |   [  |   ]  |   \  |                      |      |      |      |      |      |
+ * |   !  |   @  |   [  |   ]  |   \  |                      |      |      |      |      |   ;  |
  * |------+------+------+------+------|                      |------+------+------+------+------|
  * |   #  |   $  |   (  |   )  |   |  |                      |   _  |   '  |   "  |   ~  |   `  |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
@@ -110,7 +110,7 @@
  *          `-----'   `--------------------'            `--------------------'   `-----'
  */
             bindings = <
-    &kp EXCL     &kp AT      &kp LBKT    &kp RBKT    &kp BACKSLASH           &trans          &trans          &trans              &trans      &trans
+    &kp EXCL     &kp AT      &kp LBKT    &kp RBKT    &kp BACKSLASH           &trans          &trans          &trans              &trans      &kp semi
     &kp HASH     &kp DLLR    &kp LPAR    &kp RPAR    &kp PIPE                &kp UNDER       &kp APOS        &kp DOUBLE_QUOTES   &kp TILDE   &kp GRAVE
     &kp PRCNT    &kp CARET   &kp LBRC    &kp RBRC    &kp AMPS                &trans          &trans          &trans              &trans      &trans
     &trans       &lt 3 DEL   &lt 1 SPACE &kp TAB     &kp N2                  &kp N3          &kp ESC         &kp BSPC            &lt 2 RET   &trans
